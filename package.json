@@ -1,0 +1,16 @@
+{
+  "name": "elias-portfolio",
+  "version": "1.0.0",
+  "description": "Elias Luzwehimana - Software Engineer Portfolio",
+  "author": "Elias Luzwehimana",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx http-server -p 3000 -o",
+    "preview": "npx http-server"
+  },
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "developer"
+  ]
+}
