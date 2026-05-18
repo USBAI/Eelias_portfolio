@@ -477,7 +477,7 @@ body::after {
 ═══════════════════════════════════════════ */
 #skills { background:transparent; }
 .skills-wrap {
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:16px;
 }
 .skill-card {
@@ -511,6 +511,20 @@ body::after {
 }
 .skill-li:hover { color:var(--ink); padding-left:3px; }
 .skill-li:hover::before { background:var(--green); }
+.skill-level {
+  display:inline-flex; align-items:center; gap:4px;
+  margin-left:auto; font-size:9px; letter-spacing:.06em;
+  text-transform:uppercase; font-weight:600;
+  padding:2px 6px; border-radius:4px; flex-shrink:0;
+}
+.skill-level.advanced {
+  background:rgba(26,122,82,.12);
+  color:var(--green);
+}
+.skill-level.intermediate {
+  background:rgba(255,107,61,.15);
+  color:#FF6A3D;
+}
 
 /* ═══════════════════════════════════════════
    PROJECTS
@@ -717,7 +731,7 @@ footer {
   .proj-grid { grid-template-columns:1fr; }
   .edu-grid { grid-template-columns:1fr; gap:24px; }
   .contact-grid { grid-template-columns:1fr; }
-  .skills-wrap { grid-template-columns:1fr 1fr; }
+  .skills-wrap { grid-template-columns:1fr; }
   .exp-head { flex-direction:column; }
   .exp-right { align-items:flex-start; }
 }
@@ -908,7 +922,7 @@ footer {
         <div class="exp-tags">
           <span class="exp-tag">Python</span><span class="exp-tag">Django</span><span class="exp-tag">PostgreSQL</span>
           <span class="exp-tag">AWS RDS</span><span class="exp-tag">Docker</span><span class="exp-tag">REST APIs</span>
-          <span class="exp-tag">Jenkins</span>
+          <span class="exp-tag">JFrog</span>
         </div>
       </div>
 
@@ -924,71 +938,71 @@ footer {
       <div class="skill-card reveal" style="transition-delay:.04s">
         <div class="skill-cat">Frontend</div>
         <ul class="skill-list-g">
-          <li class="skill-li">React.js &amp; Next.js</li>
-          <li class="skill-li">TypeScript / JavaScript</li>
-          <li class="skill-li">Tailwind CSS</li>
-          <li class="skill-li">HTML5 &amp; CSS3</li>
-          <li class="skill-li">Responsive Design</li>
-          <li class="skill-li">Figma (UI/UX)</li>
+          <li class="skill-li">React.js &amp; Next.js <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">TypeScript / JavaScript <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Tailwind CSS <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">HTML5 &amp; CSS3 <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Responsive Design <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Figma (UI/UX) <span class="skill-level advanced">Advanced</span></li>
         </ul>
       </div>
 
       <div class="skill-card reveal" style="transition-delay:.1s">
         <div class="skill-cat">Backend</div>
         <ul class="skill-list-g">
-          <li class="skill-li">Node.js / Express.js</li>
-          <li class="skill-li">Python / Django / FastAPI</li>
-          <li class="skill-li">GraphQL</li>
-          <li class="skill-li">REST API Design</li>
-          <li class="skill-li">C# / .NET Core</li>
-          <li class="skill-li">Apache Kafka</li>
+          <li class="skill-li">Node.js / Express.js <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Python / Django / FastAPI <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">GraphQL <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">REST API Design <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">C# / .NET Core <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Apache Kafka <span class="skill-level intermediate">Intermediate</span></li>
         </ul>
       </div>
 
       <div class="skill-card reveal" style="transition-delay:.16s">
         <div class="skill-cat">Cloud &amp; Data</div>
         <ul class="skill-list-g">
-          <li class="skill-li">AWS (Lambda, S3, RDS, EC2…)</li>
-          <li class="skill-li">PostgreSQL / MongoDB</li>
-          <li class="skill-li">Elasticsearch / OpenSearch</li>
-          <li class="skill-li">Firebase</li>
-          <li class="skill-li">Grafana</li>
-          <li class="skill-li">TensorFlow / OpenAI APIs</li>
+          <li class="skill-li">AWS (Lambda, S3, RDS, EC2…) <span class="skill-level intermediate">Intermediate</span></li>
+          <li class="skill-li">PostgreSQL / MongoDB <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Elasticsearch / OpenSearch <span class="skill-level intermediate">Intermediate</span></li>
+          <li class="skill-li">Firebase <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Grafana <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">TensorFlow / OpenAI APIs <span class="skill-level advanced">Advanced</span></li>
         </ul>
       </div>
 
       <div class="skill-card reveal" style="transition-delay:.22s">
         <div class="skill-cat">DevOps</div>
         <ul class="skill-list-g">
-          <li class="skill-li">Docker &amp; Kubernetes</li>
-          <li class="skill-li">CI/CD Pipelines</li>
-          <li class="skill-li">Git &amp; GitHub</li>
-          <li class="skill-li">Jenkins</li>
-          <li class="skill-li">SSH &amp; PowerShell</li>
-          <li class="skill-li">AWS CloudFormation</li>
+          <li class="skill-li">Docker &amp; Kubernetes <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">CI/CD Pipelines <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Git &amp; GitHub <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">JFrog <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">SSH &amp; PowerShell <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">AWS CloudFormation <span class="skill-level intermediate">Intermediate</span></li>
         </ul>
       </div>
 
       <div class="skill-card reveal" style="transition-delay:.28s;grid-column:span 1">
         <div class="skill-cat">IaC</div>
         <ul class="skill-list-g">
-          <li class="skill-li">Terraform</li>
-          <li class="skill-li">Infrastructure as Code</li>
-          <li class="skill-li">AWS CloudFormation</li>
-          <li class="skill-li">Cloud resource provisioning</li>
-          <li class="skill-li">State management</li>
+          <li class="skill-li">Terraform <span class="skill-level intermediate">Intermediate</span></li>
+          <li class="skill-li">Infrastructure as Code <span class="skill-level intermediate">Intermediate</span></li>
+          <li class="skill-li">AWS CloudFormation <span class="skill-level intermediate">Intermediate</span></li>
+          <li class="skill-li">Cloud resource provisioning <span class="skill-level intermediate">Intermediate</span></li>
+          <li class="skill-li">State management <span class="skill-level advanced">Advanced</span></li>
         </ul>
       </div>
 
       <div class="skill-card reveal" style="transition-delay:.34s">
         <div class="skill-cat">AI &amp; Soft Skills</div>
         <ul class="skill-list-g">
-          <li class="skill-li">AI/ML Integration</li>
-          <li class="skill-li">Prompt Engineering</li>
-          <li class="skill-li">Team Leadership</li>
-          <li class="skill-li">Agile / Scrum</li>
-          <li class="skill-li">System Architecture</li>
-          <li class="skill-li">Client Relations</li>
+          <li class="skill-li">AI/ML Integration <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Prompt Engineering <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Team Leadership <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Agile / Scrum <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">System Architecture <span class="skill-level advanced">Advanced</span></li>
+          <li class="skill-li">Client Relations <span class="skill-level advanced">Advanced</span></li>
         </ul>
       </div>
 

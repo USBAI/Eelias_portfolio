@@ -24,7 +24,7 @@
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/(?!klar\\.html|vela\\.html|image\\.png|package\\.json)(.*)",
       "destination": "/index.html"
     }
   ]
